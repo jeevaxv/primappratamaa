@@ -1,0 +1,223 @@
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --primary: #fff;
+  --hover: #6e7179;
+  --bg: #000;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #111;
+  border-radius: 1rem;
+  background-color: #000;
+}
+
+.header {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.h2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #111;
+  font-size: 18px;
+}
+
+#myTable th {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable td {
+  text-align: left;
+  padding: 12px;
+  color: #fff;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #111;
+}
+
+#myTable tr.header,
+#myTable th {
+  background-color: #111;
+}
+
+#search-box {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #111;
+  border-radius: 1rem;
+  font-size: 16px;
+  outline: none;
+}
+
+#search-box::placeholder {
+  color: #999;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 20px;
+  color: #585653;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: var(--hover);
+  margin: 1rem;
+  transition: 0.25s ease-in;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--secondary);
+  transition: 0.25s ease-out;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: var(--hover);
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  transition: 0.25s ease-in;
+}
+
+footer .credit {
+  color: var(--hover);
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--hover);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 7px;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .verb .vocab p {
+    font-size: 1.22rem;
+  }
+
+  footer .abc {
+    font-size: 0.5rem;
+    font-weight: 400;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  /* .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--bg);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--primary);
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  } */
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
